@@ -1,0 +1,57 @@
+let result = 'number' + 3 + 3 // concatenation of different types string and numbers
+console.log(result); // number33
+
+let result = null + 3; // null means no value provided for variable
+console.log(result); // 3
+
+let result =5 && "qwerty"; // Logical AND (&&) evaluates operands from left to right, returning immediately with the value of the first falsy operand it encounters; if all values are truthy, the value of the last operand is returned.
+console.log(result);// qwerty;
+
+let result = +'40' + +'2' + "hillel"; // 40 and 2 converts to numbers and we get the sum, than goes concatenation with a string that can’t convert to a number
+console.log(result); // 42hillel
+
+let result = '10' - 5 === 6; // strict equality can’t compare different types - it will be false by default;
+console.log(result); // false
+
+let result = true + false; // true = 1, false = 0 as numbers, sum = 1
+console.log(result); // 1
+
+let result = '4px' - 3 // No sense in arithmetic operation if it’s a string that can not be converted to number (4px will be Nan)
+console.log(result); // NaN
+
+let result = '4' - 3; // string 4 can be converted to a number 4
+console.log(result); // 1;
+
+let result = '6' + 3 ** 0; // first priority multiply 3*0 =1, than concatenation 
+console.log(result); // 61;
+
+let result = 12 / '6' // string ’6’ can be converted to a number
+console.log(result); // 2;
+
+let result = '10' + (5 === 6); // operation in () means false as 5 is not 6, than goes concatenation with string ‘10’
+console.log(result); // 10false;
+
+let result =  null == ''; // null can’t be converted to string to compare
+console.log(result); // false;
+
+let result = 3 ** (9 / 3); // The exponentiation (**) operator returns the result of raising the first operand to the power of the second operand.
+console.log(result); // 27;
+
+let result = !!'false' == !!'true'; // logical NOT + string = False, false==false
+console.log(result); // true;
+
+let result = 0 || '0' && 1; //   Logical AND (&&) evaluates operands from left to right, returning immediately with the value of the first falsy operand it encounters; if all values are truthy, the value of the last operand is returned. Next 0 || 1, 0 is not true, then return 1.
+console.log(result); // 1;
+
+let result =  (+null == false) < 1; // false means 0, null == 0 its false, false means 0 again, 0<1 it's true;
+console.log(result); // true;
+
+ let result = false && true || true; //  In & expression returns first falsy, in OR expression returns the truthy.
+console.log(result); // true;
+
+ let result = false && (false || true); In OR expression returns the truthy.  In & expression returns first falsy
+console.log(result); // false; 
+
+ let result = (+null == false) < 1 ** 5; // in () it will be true, true means 1, 1 is not less than 1 to the fifth power.  
+console.log(result); // false; 
+
