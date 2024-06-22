@@ -1,0 +1,8 @@
+function Pow (number1, number2){
+    let result = number1;
+    for (let i=1; i<number2; i++) {
+        result *= number1;
+    }
+    return result;
+}
+console.log (Pow(2,4));
