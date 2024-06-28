@@ -1,0 +1,30 @@
+var random_start = 100;
+var random_end = 1000; 
+allСycles = 20;
+var array= []
+
+for(i=random_start;i<=random_end;i++){
+   array.push(i)
+}
+
+for(countCycles=1;countCycles<=allСycles;countCycles++){
+    console.log(array.splice(Math.random()*array.length,1)[0])
+}
+
+let parni = 0;
+let neparni = 0;
+let vidsotokParni = parni/neparni*100;
+let vidsotokNeParni = neparni/parni*100;
+
+
+for (let element of array){
+    if (element%2===0)
+    parni++;
+    else {
+    neparni++;
+    }
+    
+    console.log(parni);
+    console.log(neparni);
+
+}
