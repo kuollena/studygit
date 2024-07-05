@@ -1,0 +1,17 @@
+const dog = {
+    name: "Rex",
+    legs: 4,
+    address: "Dnipro"
+};
+
+dog.getInfo = function getInfo(){
+    return (dog);
+}
+console.log (dog.getInfo());
+
+dog.age = 5;
+
+dog.getInfo = function getInfo(){
+    return (dog);
+}
+console.log (dog.getInfo());
