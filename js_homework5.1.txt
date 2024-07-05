@@ -1,0 +1,23 @@
+const services = {
+    hairCutting: 60,
+    shaving: 80,
+    hairWashing: 100
+};
+services.brokenGlass = 200;
+
+let prices = Object.values(services);
+
+services.sum = function sum () {
+    return this.hairCutting + this.shaving + this.hairWashing + this.brokenGlass;
+}
+console.log(services.sum());
+
+services.max = function max () {
+    return Math.max.apply(null, prices);
+}
+console.log(services.max());
+
+services.min = function min () {
+    return Math.min.apply(null, prices);
+}
+console.log(services.min());
