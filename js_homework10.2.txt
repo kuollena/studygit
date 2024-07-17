@@ -1,0 +1,4 @@
+const regex = /(?!(?:.*[Aa]){6})\b(?![\w\s]*[Aa])\w{6,}\b/g;
+const input = "Wonderful, Joyful, Happiness, Time, Task, Apple";
+const matches = input.match(regex);
+console.log(matches); 
